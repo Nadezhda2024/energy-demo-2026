@@ -216,7 +216,7 @@ if sig != st.session_state.files_sig:
         st.session_state.user_text = "\n\n".join(texts)
 
 # ---------- Основная область ----------
-st.markdown("# 🧠 ИИ-Ассистент презентаций")
+st.markdown("# ✨ ИИ-Ассистент презентаций")
 st.info(
     "Загрузите текстовые документы и при желании шаблон PPTX в боковом меню. "
     "Тексты автоматически объединятся и появятся в поле ниже."
@@ -252,7 +252,7 @@ with col2:
 
 st.divider()
 
-if st.button("✨ Запустить генерацию презентации", use_container_width=True):
+if st.button(" Запустить генерацию презентации", use_container_width=True):
     if user_text.strip() or template_bytes:
         with st.spinner("Формирую слайды..."):
             total = int(st.session_state.slider_input)
